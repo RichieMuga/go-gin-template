@@ -1,7 +1,8 @@
 # Motivation
 
 The Go Gin Template aims to provide a robust and well-structured starting point for building scalable and maintainable web applications using Go and the Gin framework. By integrating essential tools and best practices, this template helps streamline the development process and ensures a solid foundation for building production-ready applications.
-Features
+
+### Features
 
 - [x] Swagger Documentation: Automatically generate and serve API documentation using Swagger.
 - [x] Logging: Utilize slog for structured and JSON-formatted logging.
@@ -56,26 +57,14 @@ go get gorm.io/gorm
 go get gorm.io/driver/sqlite
 ```
 
-## Features
-### Swagger Documentation
+### Important commands to run in the CLI
+#### To generate Swagger Documentation
 
-- The project uses Swagger for API documentation. To generate and update the Swagger documentation, run the following command:
+- To generate and update the Swagger documentation, run the following command:
 
 ```bash
 swag init -g cmd/server/main.go -d ./ --exclude ./models ./cmd ./internals ./config ./database ./routes ./pkg
 ```
-
-- This command generates Swagger documentation files and places them in the appropriate directories.
-Logging with slog
-
-- The project integrates slog for structured logging. Logs are formatted in JSON, making it easy to integrate with log management systems and perform detailed analysis.
-Testing with testify
-
-- Testing is facilitated using the testify library, which provides useful assertion functions and test suite capabilities.
-ORM Integration with GORM
-
-- GORM is used as the ORM for database interactions. It simplifies database operations and provides a flexible interface for working with SQLite databases.
-Running the Application
 
 ### To run the application, use the following command:
 
