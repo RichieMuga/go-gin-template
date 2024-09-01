@@ -12,7 +12,7 @@ Features
 ## Installation Instructions
 ### Prerequisites
 
-    Go: Ensure Go is installed on your machine. You can download it from golang.org.
+Go: Ensure Go is installed on your machine. You can download it from [golang.org](https://go.dev/)
 
 ## Clone the Repository
 ```bash
@@ -59,22 +59,22 @@ go get gorm.io/driver/sqlite
 ## Features
 ### Swagger Documentation
 
-The project uses Swagger for API documentation. To generate and update the Swagger documentation, run the following command:
+- The project uses Swagger for API documentation. To generate and update the Swagger documentation, run the following command:
 
 ```bash
 swag init -g cmd/server/main.go -d ./ --exclude ./models ./cmd ./internals ./config ./database ./routes ./pkg
 ```
 
-This command generates Swagger documentation files and places them in the appropriate directories.
+- This command generates Swagger documentation files and places them in the appropriate directories.
 Logging with slog
 
-The project integrates slog for structured logging. Logs are formatted in JSON, making it easy to integrate with log management systems and perform detailed analysis.
+- The project integrates slog for structured logging. Logs are formatted in JSON, making it easy to integrate with log management systems and perform detailed analysis.
 Testing with testify
 
-Testing is facilitated using the testify library, which provides useful assertion functions and test suite capabilities.
+- Testing is facilitated using the testify library, which provides useful assertion functions and test suite capabilities.
 ORM Integration with GORM
 
-GORM is used as the ORM for database interactions. It simplifies database operations and provides a flexible interface for working with SQLite databases.
+- GORM is used as the ORM for database interactions. It simplifies database operations and provides a flexible interface for working with SQLite databases.
 Running the Application
 
 ### To run the application, use the following command:
@@ -86,12 +86,12 @@ go run cmd/server/main.go
 This starts the server, and you should be able to access it at http://localhost:8080 (or the port specified in your configuration).
 Directory Structure
 
-    - cmd/server/main.go: Entry point for the application.
-    - config/config.go: Configuration settings.
-    - database/db.go: Database initialization and connection.
-    - models/note.go: Example model.
-    - pkg/logger/logger.go: Logging setup.
-    - README.md: This file.
+- cmd/server/main.go: Entry point for the application.
+- config/config.go: Configuration settings.
+- database/db.go: Database initialization and connection.
+- models/note.go: Example model.
+- pkg/logger/logger.go: Logging setup.
+- README.md: This file.
 
 ## Contributing
 Contributions are welcome! Please open an issue or submit a pull request on GitHub.
