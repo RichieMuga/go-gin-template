@@ -1,6 +1,6 @@
 module github.com/RichieMuga/go-gin-template
 
-go 1.21.12
+go 1.23
 
 require (
 	github.com/gin-gonic/gin v1.10.0
