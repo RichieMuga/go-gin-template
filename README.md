@@ -1,12 +1,12 @@
 # Motivation
 
-The Go Gin Template aims to provide a robust and well-structured starting point for building scalable and maintainable web applications using Go and the Gin framework. By integrating essential tools and best practices, this template helps streamline the development process and ensures a solid foundation for building production-ready applications.
+The Go Gin Template aims to provide a robust and well-structured starting point for building scalable and maintainable web applications using Go and the Gin framework. I personally will be using this as microservices starterpack.
 
 ### Features
 
 - [x] Swagger Documentation: Automatically generate and serve API documentation using Swagger.
 - [x] Logging: Utilize slog for structured and JSON-formatted logging.
-- [ ] Testing: Implement tests with the testify library for comprehensive unit and integration testing.
+- [x] Testing: Implement tests with the testify library for comprehensive unit and integration testing.
 - [x] ORM Integration: Leverage gorm as the Object-Relational Mapping (ORM) tool for seamless database interactions.
 - [x] SQLite Support: Use SQLite for a lightweight and efficient database solution.
 
