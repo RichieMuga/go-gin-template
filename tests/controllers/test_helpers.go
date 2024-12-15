@@ -5,6 +5,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// SetupTestRouter defines the setup for controllers test
 func SetupTestRouter() *gin.Engine {
   // Reduce noisy output for tests
   gin.SetMode(gin.TestMode)

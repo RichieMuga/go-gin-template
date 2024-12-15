@@ -1,3 +1,4 @@
+// Package main is the entrypoint of the application
 package main
 
 // This file is intentionally left empty to satisfy swag's requirement

@@ -1,3 +1,4 @@
+// Package controllers contains controller in mvc design
 package controllers
 
 import (
