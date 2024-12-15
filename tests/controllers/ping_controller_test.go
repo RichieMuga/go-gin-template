@@ -1,3 +1,4 @@
+// Package controllers defines the tests for controller
 package controllers
 
 import (
@@ -25,6 +26,6 @@ func TestPing(t *testing.T){
   // assertions to check responseassert.Equal(t, http.StatusOK, recorder.code)
   assert.Equal(t, http.StatusOK, recorder.Code)
   
-  expected_response:=`{"message":"pong"}`
-  assert.JSONEq(t, expected_response, recorder.Body.String(), "Response should be pong")
+  expectedResponse:=`{"message":"pong"}`
+  assert.JSONEq(t, expectedResponse, recorder.Body.String(), "Response should be pong")
 }

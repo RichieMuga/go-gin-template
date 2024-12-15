@@ -1,3 +1,4 @@
+// Package logger defines how logging should occur in a contained enviroment such as a containter
 package logger
 
 import (
@@ -5,8 +6,10 @@ import (
 	"os"
 )
 
+// Log defines a varable from the slog package
 var Log *slog.Logger
 
+// InitLogger intializes the logger with various levels
 func InitLogger() {
 	// create new logger with json handler
 	handler := slog.NewJSONHandler(os.Stdout, &slog.HandlerOptions{

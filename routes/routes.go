@@ -1,3 +1,4 @@
+// Package routes defines the url routes
 package routes
 
 import (
@@ -5,6 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
+// InitializeRoutes defines the initialaization of routes with api versioning
 func InitializeRoutes(router *gin.Engine) {
 	v1 := router.Group("/api/v1")
 	{
