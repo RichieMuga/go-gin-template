@@ -80,6 +80,7 @@ Directory Structure
 - database/db.go: Database initialization and connection.
 - models/note.go: Example model.
 - pkg/logger/logger.go: Logging setup.
+- gorm.db: Sqlite database
 - README.md: This file.
 
 ## Contributing
